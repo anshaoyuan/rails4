@@ -24,4 +24,4 @@ def secure_token
     token
   end
 end
-Rails4::Application.config.secret_key_base = '0d13a0a140df527e7cc009c6b1b0ab29cab087217162b72fdce29ec97711ca98ebaafb6fcbe219d6f735628626412ee1ea3fde64ad1629f87100655b4db10f6c'
+Rails4::Application.config.secret_key_base = secure_token
