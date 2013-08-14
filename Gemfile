@@ -1,11 +1,15 @@
 source 'https://rubygems.org'
-
+ruby '1.9.3'
 
 gem 'rails', '4.0.0'
+#gem 'pg', '0.15.1'
 
 group :development, :test do
   gem 'sqlite3', '1.3.7'
   gem 'rspec-rails', '2.13.1'
+  gem 'spork-rails', github: 'railstutorial/spork-rails'
+  gem 'guard-spork', '1.5.0'
+
 end
 
 group :test do
@@ -22,8 +26,4 @@ gem 'jbuilder', '1.0.2'
 
 group :doc do
   gem 'sdoc', '0.3.20', require: false
-end
-
-group :production do
-  gem 'pg', '0.15.1'
 end
