@@ -1,4 +1,5 @@
 Rails4::Application.routes.draw do
+  get "user/new"
   root to:'static_pages#home'
   get "users/new"
   match '/help', to: 'static_pages#help',via:'get'
